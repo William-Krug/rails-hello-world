@@ -1,0 +1,25 @@
+<h1>Goodbye!</h1>
+
+<p>
+  It was nice having you here.
+</p>
+
+<%# Simple link to navigate between pages.
+    Use caution with this approach, takes in
+    assumptions and cross your fingers rails
+    doesn't change it's methodology. %>
+<p>
+  Say <a href="/say/hello">Hello</a>!
+</p>
+
+<%# Rails method of linking %>
+<p>
+  Say <%= link_to "Hello", say_hello_path %> again.
+</p>
+
+<h2>Playground</h2>
+<ul>
+  <% @files.each do |file| %>
+  <li>file name is: <%= file %></li>
+  <% end %>
+</ul>

@@ -1,0 +1,32 @@
+<h1>Hello from Rails!</h1>
+
+<p>
+  It is now <%= @time %>
+</p>
+
+<%# Simple link to navigate between pages.
+    Use caution with this approach, takes in
+    assumptions and cross your fingers rails
+    doesn't change it's methodology. %>
+<p>
+  Say <a href="/say/goodby">Goodbye</a>!
+</p>
+
+<%# Rails method of linking %>
+<p>
+  Time to say
+  <%= link_to "Goodbye", say_goodby_path %>!
+</p>
+
+<h2>Playground</h2>
+<p>
+  Addition: 1 + 2 = <%= 1+2 %>
+</p>
+
+<p>
+  Concatenation: "cow" + "boy" = <%= "cow" + "boy" %>
+</p>
+
+<p>
+  Time in one hour: <%= 1.hour.from_now.localtime %>
+</p>
